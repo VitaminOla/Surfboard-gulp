@@ -1,0 +1,50 @@
+.reviews-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-switcher__item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  position: relative;
+  cursor: pointer;
+
+  @include tablets {
+    width: rem(76px);
+    height: rem(76px);
+    border: 4px solid transparent;
+  }
+
+  @include phones {
+    width: rem(68px);
+    height: rem(68px);
+  }
+
+  &:hover {
+    border-color: $yellow-hover;
+  }
+
+  &.active {
+    border-color: $yellow-hover;
+  }
+}
+
+.reviews-switcher__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-switcher__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

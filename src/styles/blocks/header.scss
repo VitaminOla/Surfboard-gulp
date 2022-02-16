@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 700;
+  @include tablets {
+    align-items: center;
+    padding: 0 5%;
+    min-height: 91px;
+  }
+}
+
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}

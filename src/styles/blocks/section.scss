@@ -1,0 +1,32 @@
+.section {
+  // height: 100vh;
+  height: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--font-color--white {
+    color: #fff;
+
+    .section__title {
+      color: inherit;
+    }
+  }
+  @include mobileSM {
+    min-height: 625px;
+  }
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black-title;
+
+  @include phones {
+    font-size: rem(40px);
+    line-height: 1.1;
+  }
+}

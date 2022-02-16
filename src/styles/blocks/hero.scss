@@ -1,0 +1,77 @@
+.hero {
+  background: url("./img/decor/hero_bk.png") center center no-repeat;
+  background-color: #1968b1;
+
+  background-size: cover;
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  color: #fff;
+  fill: #fff;
+
+  @include tablets {
+    background-image: none;
+  }
+  @include mobileSM {
+    min-height: 625px;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(24px) 0 rem(65px);
+
+  @include tablets {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.hero__title-section {
+  width: 46%;
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("./img/decor/hero_bk.png") right 15% bottom no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero__main-title {
+  font-size: rem(48px);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: rem(17px);
+  text-transform: uppercase;
+
+  @include tablets {
+    padding: 0 5%;
+  }
+  @include phones {
+    padding: 0 3%;
+    font-size: rem(40px);
+    line-height: 90%;
+  }
+  @include mobileSM {
+    font-size: rem(34px);
+  }
+}
+
+.hero__title-desc {
+  font-size: rem(21px);
+  margin-bottom: rem(52px);
+}
+
+.hero__icon-section {
+  @include tablets {
+    display: none;
+  }
+}

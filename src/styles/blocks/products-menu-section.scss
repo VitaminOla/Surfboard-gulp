@@ -1,0 +1,38 @@
+.products-menu-section {
+  background: url("./img/bg/products-menu.jpeg") center center / cover no-repeat;
+  position: relative;
+  color: #fff;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.section__title.products-menu-section__title {
+  position: absolute;
+  top: 110px;
+  left: 85px;
+  color: #fff;
+
+  @include tablets {
+    top: 85px;
+    left: 40px;
+  }
+
+  @include phones {
+    top: 75px;
+    left: 10px;
+  }
+
+  @include mobileSM {
+    // transform: rotate(-90deg) translateY(-50%);
+    // transform-origin: 30% 50%;
+  }
+}

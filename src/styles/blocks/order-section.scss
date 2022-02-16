@@ -1,0 +1,17 @@
+.order-section {
+  background: url("./img/decor/order_bk.jpeg") center center no-repeat;
+  // background-size: 100% 100%;
+  background-size: cover;
+}
+.order-section-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mobileSM {
+    min-height: 625px;
+  }
+}

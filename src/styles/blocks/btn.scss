@@ -1,0 +1,35 @@
+.btn {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(21px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  background: $yellow;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $yellow-hover;
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    color: #fff;
+    text-transform: none;
+    font-size: rem(18px);
+    font-weight: 400;
+    padding-left: rem(14px);
+
+    @include tablets {
+      padding-left: rem(32px);
+    }
+
+    &:hover {
+      color: $yellow;
+      background: transparent;
+    }
+  }
+}
